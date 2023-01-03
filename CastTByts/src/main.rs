@@ -4,8 +4,8 @@ fn main() {
 
 	let bytes_be = flt32.to_be_bytes();
 	let bytes_le = flt32.to_le_bytes();
-	println!("{:#x}", bytes_be);
-	println!("{:#x}", bytes_le);
+	println!("{:X?}", bytes_be);
+	println!("{:X?}", bytes_le);
 
 	let bytes = value.to_be_bytes();
 	println!("{:?}", bytes);

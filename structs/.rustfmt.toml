@@ -1,0 +1,27 @@
+# 配置说明: https://rust-lang.github.io/rustfmt/
+
+# Reorder import and extern crate statements alphabetically in groups (a group is separated by a newline).
+reorder_imports = true
+
+# Maximum number of blank lines which can be put between items. 
+# If more than this number of consecutive empty lines are found, they are trimmed down to match this integer.                                                            
+# blank_lines_upper_bound = 1
+
+# Number of spaces per tab
+tab_spaces = 8
+
+# Maximum width of each line
+max_width = 170
+
+# Use tab characters for indentation, spaces for alignment
+hard_tabs = true
+
+# Control the layout of arguments in a function
+fn_args_layout = "Tall"
+
+# Always print the abi for extern items
+force_explicit_abi = true
+
+# imports_indent = "Block"
+# imports_layout = "Mixed"
+# indent_style = "Visual"
