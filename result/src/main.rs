@@ -18,3 +18,11 @@ fn main() {
 
     println!("Hello, world!");
 }
+
+
+fn gaussian(mean: f64, variance: f64) -> impl Fn(f64) -> f64 {
+    let std_dev = variance.sqrt();
+    move |x| {
+        (1.0 / (std_dev * 2.0 * std::f64::consts::PI).sqrt()) * (-1.0 * (x - mean).powi(2) / (2.0 * variance)).exp()
+    }
+} 
